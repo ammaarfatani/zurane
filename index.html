@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zurane — Luxury Pakistani Fashion</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="commerce.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       ANNOUNCEMENT BAR
+  ═══════════════════════════════════════════ -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-track">
+      <span class="announcement-item">Free Shipping on orders above PKR 5,000</span>
+      <span class="announcement-sep">·</span>
+      <span class="announcement-item">New Arrivals — Summer Luxe 2025</span>
+      <span class="announcement-sep">·</span>
+      <span class="announcement-item">Eid Collection — Up to 30% Off</span>
+      <span class="announcement-sep">·</span>
+      <span class="announcement-item">Free Shipping on orders above PKR 5,000</span>
+      <span class="announcement-sep">·</span>
+      <span class="announcement-item">New Arrivals — Summer Luxe 2025</span>
+      <span class="announcement-sep">·</span>
+      <span class="announcement-item">Eid Collection — Up to 30% Off</span>
+      <span class="announcement-sep">·</span>
+    </div>
+    <!-- <button class="announcement-close" id="closeAnnouncement" aria-label="Close announcement">&#x2715;</button> -->
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="header" id="header">
+    <div class="header-inner">
+
+      <!-- Mobile Menu Toggle -->
+      <!-- <div class="header-left">
+  <button class="menu-btn" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span class="hamburger"></span>
+    <span class="menu-label">MENU</span>
+  </button>
+</div> -->
+
+      <!-- Nav Left -->
+      <div class="header-left">
+  <button class="menu-btn" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+    <span class="hamburger"></span>
+    <span>MENU</span>
+  </button>
+</div>
+
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Zurane Home">
+        <span class="logo-text">ZURANE</span>
+        <span class="logo-sub">Collection</span>
+      </a>
+
+      <!-- Nav Right (Icons) -->
+      <div class="nav-right">
+        <button class="icon-btn" id="searchToggle" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <a href="#" class="icon-btn" aria-label="Account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </a>
+        <button class="icon-btn cart-btn" id="cartToggle" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="searchBar">
+      <div class="search-inner">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" placeholder="Search for collections, fabrics, styles..." id="searchInput" />
+        <button class="search-close" id="searchClose" aria-label="Close search">&#x2715;</button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobileNav">
+      <div class="mobile-nav-inner">
+
+  <div class="mobile-menu-header">
+    <button class="close-menu" id="closeMenu" aria-label="Close menu">✕</button>
+    <span>MENU</span>
+  </div>
+
+  <ul class="mobile-menu-list">
+
+    <li class="active">
+      <a href="#">NEW ARRIVALS</a>
+    </li>
+
+    <li>
+      <a href="#">SUMMER EDIT '26</a>
+    </li>
+
+    <li class="has-dropdown">
+
+    <div class="menu-row">
+        <a href="#">SHOP BY CATEGORY</a>
+        <button class="dropdown-toggle" aria-label="Toggle submenu" aria-expanded="false">+</button>
+    </div>
+
+    <ul class="submenu">
+        <li><a href="#">UNSTITCHED</a></li>
+        <li><a href="#">READY TO WEAR</a></li>
+        <li><a href="#">FORMALS</a></li>
+    </ul>
+
+</li>
+
+<li class="has-dropdown">
+
+    <div class="menu-row">
+        <a href="#">WINTERS '25</a>
+        <button class="dropdown-toggle" aria-label="Toggle submenu" aria-expanded="false">+</button>
+    </div>
+
+    <ul class="submenu">
+        <li><a href="#">KHADDAR 3PC</a></li>
+        <li><a href="#">VELVET 2PC</a></li>
+        <li><a href="#">KHADDAR 2PC</a></li>
+    </ul>
+
+</li>
+
+    <li>
+      <a href="#">FACTORY CLEARANCE</a>
+    </li>
+
+    <li class="has-plus">
+      <a href="#">SALE</a>
+    </li>
+
+  </ul>
+
+</div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+  </header>
+
+  <!-- Mobile Nav Overlay Bg -->
+  
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-slides">
+
+      <div class="hero-slide active" data-index="0">
+        <div class="hero-img-wrap">
+          <img src="./public/hero1.webp" alt="Summer Luxe Collection" class="hero-img" />
+        </div>
+       
+      </div>
+
+      <div class="hero-slide" data-index="1">
+        <div class="hero-img-wrap">
+          <img src="./public/hero 2.webp" alt="Bridal Couture" class="hero-img" />
+        </div>
+       
+      </div>
+
+      <div class="hero-slide" data-index="2">
+        <div class="hero-img-wrap">
+          <img src="./public/hero 3.webp" alt="Eid Festive" class="hero-img" />
+        </div>
+       
+      </div>
+
+      <div class="hero-slide" data-index="3">
+        <div class="hero-img-wrap">
+          <img src="./public/hero 4.webp" alt="Eid Festive" class="hero-img" />
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Hero Controls -->
+    <div class="hero-controls">
+      <button class="hero-arrow hero-prev" id="heroPrev" aria-label="Previous slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="hero-dots" id="heroDots">
+        <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="hero-dot" data-slide="3" aria-label="Slide 4"></button>
+      </div>
+      <button class="hero-arrow hero-next" id="heroNext" aria-label="Next slide">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FEATURED COLLECTIONS
+  ═══════════════════════════════════════════ -->
+  <section class="section collections-section" id="collections">
+    <div class="container">
+      
+      <div class="collections-grid">
+
+        <a href="#" class="collection-card collection-card--large">
+          <div class="collection-img-wrap">
+            <img src="./public/feautured1.webp" alt="Luxury Lawn" class="collection-img" />
+          </div>
+          <div class="collection-info">
+            <p class="collection-label">Summer 2025</p>
+            <h3 class="collection-name">Luxury Lawn</h3>
+            <span class="collection-cta">Shop Now →</span>
+          </div>
+        </a>
+
+        <a href="#" class="collection-card collection-card--large">
+          <div class="collection-img-wrap">
+            <img src="./public/feautured 2.webp" alt="Luxury Lawn" class="collection-img" />
+          </div>
+          <div class="collection-info">
+            <p class="collection-label">Summer 2025</p>
+            <h3 class="collection-name">Luxury Lawn</h3>
+            <span class="collection-cta">Shop Now →</span>
+          </div>
+        </a>
+
+        <!-- <div class="collections-col-right">
+          <a href="#" class="collection-card">
+            <div class="collection-img-wrap">
+              <img src="https://images.unsplash.com/photo-1609505848912-b7c3b9a4d34d?w=700&q=80" alt="Bridal Couture" class="collection-img" />
+            </div>
+            <div class="collection-info">
+              <p class="collection-label">Couture</p>
+              <h3 class="collection-name">Bridal Edit</h3>
+              <span class="collection-cta">Shop Now →</span>
+            </div>
+          </a>
+
+          <a href="#" class="collection-card">
+            <div class="collection-img-wrap">
+              <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=700&q=80" alt="Eid Festive" class="collection-img" />
+            </div>
+            <div class="collection-info">
+              <p class="collection-label">Festive</p>
+              <h3 class="collection-name">Eid Collection</h3>
+              <span class="collection-cta">Shop Now →</span>
+            </div>
+          </a>
+        </div> -->
+
+      </div>
+    </div>
+  </section>
+
+   <!-- ═══════════════════════════════════════════
+       NEWSLETTER
+  ═══════════════════════════════════════════ -->
+  <section class="section newsletter-section" id="newsletter">
+    <div class="newsletter-inner">
+      <p class="section-eyebrow newsletter-eyebrow">Keep me updated</p>
+      <h2 class="newsletter-title">Newsletter</h2>
+      <p class="newsletter-desc">Subscribe to our newsletter to get latest updates.</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="Your email address" class="newsletter-input" id="newsletterEmail" required />
+        <button type="submit" class="btn btn-dark newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       NEW ARRIVALS
+  ═══════════════════════════════════════════ -->
+  <section class="section arrivals-section" id="arrivals">
+    <div class="container">
+      <div class="section-header section-header--flex">
+        <div>
+          <h2 class="section-title">SUMMER EDIT '26</h2>
+        </div>
+      </div>
+
+      <div class="products-grid" id="newArrivalsGrid" data-products="1,2,3,4"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       BEST SELLERS
+  ═══════════════════════════════════════════ -->
+  <section class="section bestsellers-section" id="bestsellers">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Best Sellers</h2>
+      </div>
+
+      <div class="bestsellers-grid" data-products="5,6,7,8"></div>
+
+      <div class="section-cta">
+        <a href="#" class="btn btn-outline">View All Best Sellers</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SHOP THE LOOK
+  ═══════════════════════════════════════════ -->
+  <section class="shop-look">
+  <div class="container">
+    <h2>SHOP THE LOOK</h2>
+
+    <div class="look-wrapper">
+
+      <button class="nav-btn prev" aria-label="Previous look">&#10094;</button>
+
+      <div class="main-look">
+
+        <img src="./public/look1.webp"
+          alt="Fashion Look">
+
+        <button class="hotspot hotspot-1" aria-label="View first look"></button>
+        <button class="hotspot hotspot-2" aria-label="View second look"></button>
+
+      </div>
+
+      <div class="product-card">
+
+        <img src="./public/look1.webp"
+          alt="Product">
+
+        <div class="product-info">
+          <h4>SEHRZAT</h4>
+          <p>Rs 7,112</p>
+
+          <a href="#" class="view-btn">
+            VIEW PRODUCT
+          </a>
+        </div>
+
+      </div>
+
+      <button class="nav-btn next" aria-label="Next look">&#10095;</button>
+
+    </div>
+
+    <div class="dots">
+      <button class="active" aria-label="Look 1"></button>
+      <button aria-label="Look 2"></button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ═══════════════════════════════════════════
+       BRAND STORY
+  ═══════════════════════════════════════════ -->
+  <!-- <section class="section story-section" id="story">
+    <div class="story-inner">
+
+      <div class="story-text-col">
+        <p class="section-eyebrow">Our Heritage</p>
+        <h2 class="section-title story-title">Crafted for<br /><em>Zurane,</em><br />Worn Everywhere</h2>
+        <p class="story-para">Zurane celebrates Pakistani fashion through considered collections, distinctive details and timeless style.</p>
+        <p class="story-para">Every piece is a conversation between tradition and today: hand-drawn motifs translated into precise digital embroidery, mulberry silk woven on modern looms, silhouettes that move with you whether you are in Karachi or Kuala Lumpur.</p>
+        <a href="#" class="btn btn-outline">Our Story</a>
+      </div>
+
+      <div class="story-img-col">
+        <div class="story-img-wrap story-img--top">
+          <img src="https://images.unsplash.com/photo-1614251056798-0a63eda2bb25?w=700&q=80" alt="Craftsmanship" loading="lazy" />
+        </div>
+        <div class="story-img-wrap story-img--bottom">
+          <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=500&q=80" alt="Heritage craft" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+
+    <div class="story-stats">
+      <div class="stat-item">
+        <p class="stat-number">1998</p>
+        <p class="stat-label">Zurane Collection</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">12+</p>
+        <p class="stat-label">Countries Reached</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">200k+</p>
+        <p class="stat-label">Happy Customers</p>
+      </div>
+      <div class="stat-item">
+        <p class="stat-number">100%</p>
+        <p class="stat-label">Ethically Crafted</p>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ═══════════════════════════════════════════
+       INSTAGRAM GALLERY
+  ═══════════════════════════════════════════ -->
+  <!-- <section class="section insta-section" id="instagram">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Follow Us</p>
+        <h2 class="section-title">@zurane</h2>
+        <p class="insta-sub">Style our pieces and tag us for a chance to be featured</p>
+      </div>
+
+      <div class="insta-grid">
+        <a href="#" class="insta-item" aria-label="Instagram post 1">
+          <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=400&q=75" alt="Instagram 1" loading="lazy" />
+          <div class="insta-overlay">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </div>
+        </a>
+        <a href="#" class="insta-item" aria-label="Instagram post 2">
+          <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400&q=75" alt="Instagram 2" loading="lazy" />
+          <div class="insta-overlay"></div>
+        </a>
+        <a href="#" class="insta-item" aria-label="Instagram post 3">
+          <img src="https://images.unsplash.com/photo-1614251056798-0a63eda2bb25?w=400&q=75" alt="Instagram 3" loading="lazy" />
+          <div class="insta-overlay"></div>
+        </a>
+        <a href="#" class="insta-item" aria-label="Instagram post 4">
+          <img src="https://images.unsplash.com/photo-1617019114583-affb34d1b3cd?w=400&q=75" alt="Instagram 4" loading="lazy" />
+          <div class="insta-overlay"></div>
+        </a>
+        <a href="#" class="insta-item" aria-label="Instagram post 5">
+          <img src="https://images.unsplash.com/photo-1609505848912-b7c3b9a4d34d?w=400&q=75" alt="Instagram 5" loading="lazy" />
+          <div class="insta-overlay"></div>
+        </a>
+        <a href="#" class="insta-item" aria-label="Instagram post 6">
+          <img src="https://images.unsplash.com/photo-1583391733956-6c78276477e2?w=400&q=75" alt="Instagram 6" loading="lazy" />
+          <div class="insta-overlay"></div>
+        </a>
+      </div>
+    </div>
+  </section> -->
+
+ 
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <span style="color: white;" class="logo-text">Zurane</span>
+            <span class="logo-sub">Collection</span>
+          </a>
+          <p class="footer-tagline">Pakistani luxury fashion, crafted with intention.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.22-5.17 1.22-5.17s-.31-.63-.31-1.56c0-1.46.85-2.55 1.9-2.55.9 0 1.33.67 1.33 1.48 0 .9-.58 2.26-.87 3.51-.25 1.05.52 1.9 1.55 1.9 1.86 0 3.1-2.4 3.1-5.25 0-2.16-1.45-3.77-4.08-3.77-2.97 0-4.81 2.22-4.81 4.7 0 .85.24 1.45.62 1.91.17.2.2.28.13.52-.04.17-.15.57-.19.73-.06.24-.24.33-.44.24-1.23-.5-1.81-1.86-1.81-3.38 0-2.5 2.11-5.51 6.32-5.51 3.38 0 5.6 2.45 5.6 5.08 0 3.49-1.94 6.1-4.78 6.1-.95 0-1.85-.51-2.16-1.09l-.6 2.33c-.2.78-.76 1.74-1.16 2.34.87.27 1.79.42 2.75.42 5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="TikTok">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Sale</a></li>
+            <li><a href="#">Bridal Couture</a></li>
+            <li><a href="#">Our Story</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Customer Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">Track My Order</a></li>
+            <li><a href="#">Size Guide</a></li>
+            <li><a href="#">Returns & Exchanges</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Policies</h4>
+          <ul class="footer-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-group">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links footer-contact">
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.96a16 16 0 0 0 6.13 6.13l1.27-.84a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              +92 300 0000000
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:hello@zurane.com">hello@zurane.com</a>
+            </li>
+            <li>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Zurane, Pakistan
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="footer-copy">© 2026 Zurane. All rights reserved.</p>
+        <div class="footer-payments">
+          <span>JazzCash</span>
+          <span>Easypaisa</span>
+          <span>Visa</span>
+          <span>Mastercard</span>
+          <span>COD</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       CART DRAWER
+  ═══════════════════════════════════════════ -->
+  <aside class="cart-drawer" id="cartDrawer" role="dialog" aria-label="Shopping cart">
+    <div class="cart-drawer-header">
+      <h3>Shopping Bag</h3>
+      <button class="cart-drawer-close" id="cartClose" aria-label="Close cart">&#x2715;</button>
+    </div>
+    <div class="cart-drawer-body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <p>Your bag is empty</p>
+        <a href="#" class="btn btn-dark">Continue Shopping</a>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+    </div>
+    <div class="cart-drawer-footer" id="cartFooter" style="display:none;">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartTotal">PKR 0</span>
+      </div>
+      <p class="cart-shipping-note">Free shipping on orders above PKR 5,000</p>
+      <button class="btn btn-dark cart-checkout">Proceed to Checkout</button>
+      <button class="btn btn-outline cart-continue" id="cartContinue">Continue Shopping</button>
+    </div>
+  </aside>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="products.js"></script>
+  <script src="store.js"></script>
+  <script src="catalog.js"></script>
+  <script src="script.js"></script>
+  <script src="commerce.js"></script>
+</body>
+</html>
